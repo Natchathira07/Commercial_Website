@@ -52,91 +52,20 @@ Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
 
-## contact.html
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us - Stella Sip Station</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: white;
-            text-align: center;
-        }
-
-        h1 {
-            padding-top: 30px;
-        }
-
-        .contact-box {
-            background: white;
-            color: black;
-            width: 400px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            background: #6a0572;
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #9c27b0;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
-</head>
-
-<body>
-
-<h1>📞 Contact Stella Sip Station</h1>
-
-<div class="contact-box">
-    <form action="visit.html">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
-
-<p><a href="index.html">⬅ Back to Home</a></p>
-
-</body>
-</html>
-```
 ## welcome.html
 ```
 <!DOCTYPE html>
 <html>
 <head>
     <title>Stella Sip Station</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Orbitron', sans-serif;
             background: linear-gradient(to right, #2c003e, #6a0572);
             color: white;
             text-align: center;
@@ -148,7 +77,7 @@ Upload to GitHub Pages for free hosting.
 
         header h1 {
             font-size: 45px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
 
         header p {
@@ -160,15 +89,20 @@ Upload to GitHub Pages for free hosting.
             background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564");
             background-size: cover;
             background-position: center;
-            padding: 120px 20px;
+            padding: 150px 20px;
         }
 
         .hero h2 {
-            font-size: 50px;
-            background: rgba(0,0,0,0.6);
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 10px;
+            font-size: 55px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #ffffff, #ff4da6, #00e5ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(255,255,255,0.6),
+                         0 0 30px rgba(255,0,255,0.4),
+                         0 0 40px rgba(0,255,255,0.4);
         }
 
         footer {
@@ -197,6 +131,170 @@ Upload to GitHub Pages for free hosting.
 </body>
 </html>
 ```
+
+## menu.html
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stella Sip Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Poppins', sans-serif;
+            background-color:#f4f4f4;
+        }
+
+        /* Top Section */
+        .top-header{
+            text-align:center;
+            padding:20px;
+            background:linear-gradient(to right,#1c1c3c,#3a1c71,#d76d77);
+            color:white;
+        }
+
+        /* Hero Section */
+        .hero{
+            height:400px;
+            background:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            color:white;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:55px;
+            letter-spacing:4px;
+            background:rgba(0,0,0,0.6);
+            padding:10px 20px;
+        }
+
+        .hero p{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        /* Section Title */
+        .section-title{
+            text-align:center;
+            margin:40px 0 20px;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        /* Product Grid */
+        .products{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            padding:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:260px;
+            background:white;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h4{
+            margin:12px 0 5px;
+        }
+
+        .card p{
+            font-size:14px;
+            color:gray;
+            padding:0 10px;
+        }
+
+        .price{
+            font-weight:bold;
+            margin:10px 0 15px;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:32px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Welcome Section -->
+    <div class="top-header">
+        <h2>Welcome to Stella Sip Station</h2>
+        <p>Cosmic. Dreamy. Delicious.</p>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h1>NEW COSMIC MENU</h1>
+        <p>Explore the Universe of Flavors</p>
+    </div>
+
+    <!-- Product Section -->
+    <div class="section-title">MOST LOVED</div>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+            <h4>Moon Latte</h4>
+            <p>Creamy latte with cosmic shimmer</p>
+            <div class="price">Rs.199</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+            <h4>Saturn Donut</h4>
+            <p>Ring-shaped galaxy donut</p>
+            <div class="price">Rs.149</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e">
+            <h4>Galaxy Cupcake</h4>
+            <p>Colorful cosmic frosting swirl</p>
+            <div class="price">Rs.129</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e">
+            <h4>Nebula Cold Brew</h4>
+            <p>Layered purple-blue iced drink</p>
+            <div class="price">Rs.179</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
+
 ## visit.html
 ```
 <!DOCTYPE html>
@@ -301,11 +399,16 @@ Upload to GitHub Pages for free hosting.
 ```
 
 ## OUTPUT
-<img width="1919" height="1085" alt="Screenshot 2026-02-23 155649" src="https://github.com/user-attachments/assets/3111528f-b3e0-4766-aeba-3be8db9cdd56" />
 
-<img width="1919" height="942" alt="Screenshot 2026-02-23 155733" src="https://github.com/user-attachments/assets/e838e3ef-b0b7-4ab8-ad40-a03b9036699e" />
+<img width="1917" height="1090" alt="image" src="https://github.com/user-attachments/assets/5d81ff03-f19d-4102-b2e4-33e045e96f50" />
 
-<img width="1914" height="1083" alt="image" src="https://github.com/user-attachments/assets/c66e0e12-e900-4448-8a1f-506a178b8ef8" />
+<img width="1919" height="1088" alt="image" src="https://github.com/user-attachments/assets/6e594928-5efe-4cae-b668-22fba8d842d8" />
+
+<img width="1919" height="1088" alt="image" src="https://github.com/user-attachments/assets/fddd6712-7b98-4708-a9bf-f3d8f5ff31ba" />
+
+
+
+
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
